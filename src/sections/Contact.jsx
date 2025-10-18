@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
           <div>
             <h3 className="text-2xl sm:text-3xl font-display font-bold text-light mb-8">
@@ -109,7 +109,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6 w-full">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="w-full">
                 <label htmlFor="name" className="block text-light mb-2 text-sm sm:text-base">
                   Name
@@ -120,7 +120,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
+                  className="w-full max-w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
                   placeholder="Your Name"
                   required
                 />
@@ -135,7 +135,7 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
+                  className="w-full max-w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
                   placeholder="your@email.com"
                   required
                 />
@@ -152,7 +152,7 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
+                className="w-full max-w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors"
                 placeholder="Project Discussion"
                 required
               />
@@ -168,7 +168,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows="6"
-                className="w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors resize-none"
+                className="w-full max-w-full px-4 py-3 bg-dark/50 border border-light/10 rounded-xl text-light placeholder-light/40 focus:outline-none focus:border-primary transition-colors resize-none"
                 placeholder="Tell us about your project..."
                 required
               />
@@ -189,6 +189,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
