@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #1a1a1a;
+  color: #f8f9fa;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom design tokens for Tailwind v4 */
+@layer base {
+  :root {
+    --color-primary: 255 107 107;
+    --color-secondary: 78 205 196;
+    --color-dark: 26 26 26;
+    --color-light: 248 249 250;
+    --color-gray-400: 156 163 175;
+    --color-gray-700: 55 65 81;
+  }
+}
+
+/* Custom utility classes */
+.bg-primary { background-color: rgb(var(--color-primary)); }
+.bg-secondary { background-color: rgb(var(--color-secondary)); }
+.bg-dark { background-color: rgb(var(--color-dark)); }
+.bg-light { background-color: rgb(var(--color-light)); }
+
+.text-primary { color: rgb(var(--color-primary)); }
+.text-secondary { color: rgb(var(--color-secondary)); }
+.text-dark { color: rgb(var(--color-dark)); }
+.text-light { color: rgb(var(--color-light)); }
+
+.border-primary { border-color: rgb(var(--color-primary)); }
+.border-secondary { border-color: rgb(var(--color-secondary)); }
+.border-light { border-color: rgb(var(--color-light)); }
+
+.font-sans { font-family: 'Inter', sans-serif; }
+.font-display { font-family: 'Poppins', sans-serif; }
+
+/* Layout utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #ff6b6b, 0 0 10px #ff6b6b, 0 0 15px #ff6b6b; }
+  100% { box-shadow: 0 0 10px #4ecdc4, 0 0 20px #4ecdc4, 0 0 30px #4ecdc4; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b6b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5252;
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
