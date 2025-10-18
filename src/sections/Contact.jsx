@@ -28,16 +28,14 @@ const Contact = () => {
                 formData,
                 'KsozlRJrUmNX16yHu'
             )
-            .then(
-                () => {
-                    alert('Message sent successfully!');
-                    setFormData({ name: '', email: '', subject: '', message: '' });
-                },
-                (error) => {
-                    alert('Oops! Something went wrong. Try again.');
-                    console.error(error.text);
-                }
-            );
+            .then(() => {
+                alert('Message sent successfully!');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            })
+            .catch((error) => {
+                alert('Oops! Something went wrong. Try again.');
+                console.error(error.text);
+            });
     };
 
     const contactInfo = [
@@ -63,8 +61,8 @@ const Contact = () => {
 
     return (
         <section id="contact" className="py-20 bg-dark overflow-x-hidden">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -80,9 +78,9 @@ const Contact = () => {
                     </p>
                 </motion.div>
 
-                {/* Main Content */}
+                {/* Content */}
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-                    {/* Contact Info Section */}
+                    {/* Contact Info */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -110,9 +108,7 @@ const Contact = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <p className="text-light/60 text-sm">{item.label}</p>
-                                        <p className="text-light font-semibold break-words">
-                                            {item.value}
-                                        </p>
+                                        <p className="text-light font-semibold break-words">{item.value}</p>
                                     </div>
                                 </motion.a>
                             ))}
@@ -134,7 +130,7 @@ const Contact = () => {
                         </motion.div>
                     </motion.div>
 
-                    {/* Contact Form Section */}
+                    {/* Contact Form */}
                     <motion.form
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -217,4 +213,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
