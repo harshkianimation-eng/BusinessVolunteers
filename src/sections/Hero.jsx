@@ -14,7 +14,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center relative overflow-hidden"
+            className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8"
         >
             {/* Animated Background */}
             <div className="absolute inset-0">
@@ -45,17 +45,16 @@ const Hero = () => {
             </div>
 
             {/* Main Hero Content */}
-            <div className="container mx-auto px-6 text-center relative z-10">
+            <div className="container mx-auto text-center relative z-10">
                 <motion.h1
-                    className="text-6xl sm:5xl md:text-8xl lg:text-9xl font-display font-bold mb-6"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-display font-bold mb-6 leading-tight sm:leading-snug break-words"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    <span className="text-primary">BUSINESS</span>
-                    <br />
+                    <span className="text-primary block">BUSINESS</span>
                     <motion.span
-                        className="text-light"
+                        className="text-light block"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.8 }}
@@ -65,7 +64,7 @@ const Hero = () => {
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl md:text-2xl text-light/80 mb-12 max-w-3xl mx-auto"
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-light/80 mb-12 max-w-3xl mx-auto"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8, duration: 0.8 }}
@@ -82,8 +81,8 @@ const Hero = () => {
                     transition={{ delay: 1, duration: 0.8 }}
                 >
                     <motion.button
-                        onClick={() => setShowPopup(true)} // ✅ Opens popup
-                        className="bg-primary text-dark px-8 py-4 rounded-xl font-semibold text-lg flex items-center gap-3 group"
+                        onClick={() => setShowPopup(true)}
+                        className="bg-primary text-dark px-8 py-4 rounded-xl font-semibold text-base sm:text-lg flex items-center gap-3 group"
                         whileHover={{ scale: 1.05, backgroundColor: "#ff5252" }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -98,7 +97,7 @@ const Hero = () => {
 
                     <a href="#portfolio">
                         <motion.button
-                            className="border-2 border-light text-light px-8 py-4 rounded-full font-semibold text-lg"
+                            className="border-2 border-light text-light px-8 py-4 rounded-full font-semibold text-base sm:text-lg"
                             whileHover={{ scale: 1.05, backgroundColor: "#ffffff10" }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -125,9 +124,9 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            {/* Floating Animated Elements */}
+            {/* Floating Elements */}
             <motion.div
-                className="absolute top-20 right-20 w-8 h-8 bg-primary rounded-full"
+                className="absolute top-20 right-4 sm:right-20 w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full"
                 animate={{
                     y: [0, -30, 0],
                     rotate: [0, 180, 360],
@@ -139,7 +138,7 @@ const Hero = () => {
                 }}
             />
             <motion.div
-                className="absolute bottom-40 left-20 w-12 h-12 bg-secondary rounded-lg"
+                className="absolute bottom-32 left-4 sm:left-20 w-10 h-10 sm:w-12 sm:h-12 bg-secondary rounded-lg"
                 animate={{
                     y: [0, 30, 0],
                     rotate: [0, -180, -360],
@@ -151,7 +150,7 @@ const Hero = () => {
                 }}
             />
 
-            {/* ✅ Fixed: Pass isOpen prop to popup */}
+            {/* Start Project Popup */}
             <StartProjectPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
         </section>
     );
