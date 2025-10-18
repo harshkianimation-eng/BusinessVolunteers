@@ -33,16 +33,24 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <a href='/' >
+          {/* Logo and Text */}
+          <a href='/' className="flex items-center gap-2">
             <motion.div
-              className="text-2xl font-display font-bold text-primary flex items-center"
+              className="flex items-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img src='./logos/Logo2.png' alt='Logo' className='h-20 w-20'></img>
-              BUSINESS.VOLUNTEERS
+              <img
+                src='./logos/Logo2.png'
+                alt='Logo'
+                className='h-16 w-16 sm:h-20 sm:w-20'
+              />
+              <span className="text-lg sm:text-2xl font-display font-bold text-primary whitespace-nowrap">
+                BUSINESS.VOLUNTEERS
+              </span>
             </motion.div>
           </a>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
             {navItems.map((item, index) => (
@@ -67,7 +75,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden text-light"
+            className="md:hidden text-light ml-2"
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
