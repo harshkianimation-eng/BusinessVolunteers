@@ -8,9 +8,9 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const stats = [
-    { icon: Users, number: '250+', label: 'Happy Clients' },
-    { icon: Award, number: '200+', label: 'Projects Completed' },
-    { icon: Clock, number: '3.5+', label: 'Years Experience' },
+    { icon: Users, number: '800+', label: 'Happy Clients' },
+    { icon: Award, number: '110+', label: 'Projects Completed' },
+    { icon: Clock, number: '1.5+', label: 'Years Experience' },
     { icon: Heart, number: '100%', label: 'Client Satisfaction' },
   ];
 
@@ -48,16 +48,11 @@ const About = () => {
           {/* Text Content */}
           <motion.div variants={itemVariants}>
             <h2 className="text-5xl font-display font-bold mb-8">
-              We Create <span className="text-primary">Digital Art</span> That Inspires
+              We Don’t Just Build Brands —
+             <span className="text-primary"> We build brand legacies.</span>
             </h2>
             <p className="text-light/80 text-lg mb-6">
-              Business Volunteers is a creative studio dedicated to pushing the boundaries of digital 
-              design and development. We believe in the power of visual storytelling to 
-              transform brands and create meaningful connections.
-            </p>
-            <p className="text-light/80 text-lg mb-8">
-              Our team of passionate designers and developers work together to create 
-              immersive experiences that not only look beautiful but also drive results.
+              At Business Volunteers, we're not just another creative studio,we're your dedicated growth partners. We believe every brand has a story worth remembering, and we're obsessed with turning that vision into a powerful, immersive experience. Our team of passionate designers and innovators doesn't stop at beautiful visuals, we engineer meaningful connections that drive real results, making your brand impossible to ignore.
             </p>
           </motion.div>
 
