@@ -90,7 +90,7 @@ const Services = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-5xl font-display font-bold mb-4">
-                        Our <span className="text-secondary">Services</span>
+                        Our <span className="text-primary">Services</span>
                     </h2>
                     <p className="text-light/60 text-xl max-w-2xl mx-auto">
                         Comprehensive creative services to bring your digital vision to life with precision and
