@@ -90,6 +90,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff5252;
 }
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 /* Hide cursor on touch devices */
 @media (hover: none) and (pointer: coarse) {
