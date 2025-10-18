@@ -168,7 +168,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div>
+                        <div className="w-full">
                             <label htmlFor="subject" className="block text-light mb-2 text-sm sm:text-base">Subject</label>
                             <input
                                 type="text"
@@ -182,7 +182,7 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div>
+                        <div className="w-full">
                             <label htmlFor="message" className="block text-light mb-2 text-sm sm:text-base">Message</label>
                             <textarea
                                 id="message"
@@ -213,5 +213,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
