@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FileText } from 'lucide-react'; // PDF icon
 
 const Portfolio = () => {
-  const portfolioPdf = '/portfolio.pdf'; // ✅ put your PDF in public folder
+  const portfolioPdf = './logos/portfolio.pdf'; // ✅ put your PDF in public folder
   const pdfThumbnail = '/portfolio-thumbnail.png'; // ✅ optional thumbnail image
 
   return (
