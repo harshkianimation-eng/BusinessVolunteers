@@ -61,7 +61,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="py-20 bg-dark overflow-x-hidden">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -79,13 +79,14 @@ const Contact = () => {
                 </motion.div>
 
                 {/* Content */}
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 overflow-hidden">
                     {/* Contact Info */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
+                        className="relative will-change-transform"
                     >
                         <h3 className="text-2xl sm:text-3xl font-display font-bold text-light mb-8">
                             Let's Talk
@@ -97,7 +98,7 @@ const Contact = () => {
                                     key={item.label}
                                     href={item.href}
                                     className="flex items-start sm:items-center gap-4 p-4 rounded-2xl bg-dark/50 border border-light/10 hover:border-primary/30 transition-all duration-300 group"
-                                    whileHover={{ x: 10 }}
+                                    whileHover={{ x: 5 }}
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -137,7 +138,7 @@ const Contact = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                         onSubmit={handleSubmit}
-                        className="space-y-6 w-full"
+                        className="space-y-6 w-full relative will-change-transform"
                     >
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="w-full">
@@ -213,6 +214,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
