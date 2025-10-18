@@ -98,7 +98,6 @@ const Contact = () => {
                                     key={item.label}
                                     href={item.href}
                                     className="flex items-start sm:items-center gap-4 p-4 rounded-2xl bg-dark/50 border border-light/10 hover:border-primary/30 transition-all duration-300 group"
-                                    whileHover={{ x: 5 }}
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -214,6 +213,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
