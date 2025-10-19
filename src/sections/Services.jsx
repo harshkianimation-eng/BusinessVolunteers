@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'; // ✅ added useState
 import { motion, useInView } from 'framer-motion';
-import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film,star,target,message-circle,map-pin,megaphone } from 'lucide-react';
+import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film,Star,Target,Messagecircle,Mappin,Megaphone } from 'lucide-react';
 import StartProjectPopup from '../components/StartProjectPopup'; // 👈 import popup
 
 const Services = () => {
