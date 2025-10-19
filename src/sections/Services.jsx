@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'; // ✅ added useState
 import { motion, useInView } from 'framer-motion';
-import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film,Star,Target,Message-circle,Map-pin,Megaphone } from 'lucide-react';
+import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film,Star,Target,MessageCircle ,MapPin,Megaphone } from 'lucide-react';
 import StartProjectPopup from '../components/StartProjectPopup'; // 👈 import popup
 
 const Services = () => {
@@ -70,13 +70,13 @@ const Services = () => {
                 'Let popular creators tell your story — authentic, relatable, and result-driven.',
         },
           {
-            icon: Map-pin,
+            icon: MapPin,
             title: 'Google Business Location Setup',
             description:
                 'Get discovered faster! We help you appear where your customers search the most.',
         },
           {
-            icon: Message-circle,
+            icon: MessageCircle,
             title: 'WhatsApp Business Setup',
             description:
                 'Professional setup with catalogs that make communication and sales effortless.',
