@@ -46,7 +46,7 @@ const Navbar = () => {
                 className='h-16 w-16 sm:h-20 sm:w-20'
               />
               <span className="text-lg sm:text-2xl font-display font-bold text-primary whitespace-nowrap">
-                BUSINESS.VOLUNTEERS
+                BUSINESS VOLUNTEERS
               </span>
             </motion.div>
           </a>
