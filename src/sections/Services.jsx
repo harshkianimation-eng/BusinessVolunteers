@@ -64,31 +64,31 @@ const Services = () => {
                 'Add life to your brand with stunning visuals that wow your audience.',
         },
           {
-            icon: megaphone,
+            icon: Megaphone,
             title: 'Influencer Marketing',
             description:
                 'Let popular creators tell your story — authentic, relatable, and result-driven.',
         },
           {
-            icon: map-pin,
+            icon: Mappin,
             title: 'Google Business Location Setup',
             description:
                 'Get discovered faster! We help you appear where your customers search the most.',
         },
           {
-            icon: message-circle,
+            icon: Messagecircle,
             title: 'WhatsApp Business Setup',
             description:
                 'Professional setup with catalogs that make communication and sales effortless.',
         },
         {
-            icon: target,
+            icon: Target,
             title: 'Ad Campaigns',
             description:
                 'Smart ads that reach the right audience — at the right time, every time.',
         },
         {
-            icon: star,
+            icon: Star,
             title: 'Paid Reviews & Brand Mentions',
             description:
                 'Build credibility fast with authentic voices sharing your story.',
