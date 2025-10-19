@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'; // ✅ added useState
 import { motion, useInView } from 'framer-motion';
-import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film } from 'lucide-react';
+import { Palette, Code, Video, Smartphone, Monitor, Brush, TrendingUp, Layout, Film,star,target,message-circle,map-pin,megaphone } from 'lucide-react';
 import StartProjectPopup from '../components/StartProjectPopup'; // 👈 import popup
 
 const Services = () => {
@@ -23,9 +23,9 @@ const Services = () => {
         },
         {
             icon: Video,
-            title: 'Video Editing & Animations',
+            title: 'Influencer Video Promotions',
             description:
-                'Professional video editing and motion graphics to bring your stories to life.',
+                'Let popular creators tell your story — authentic, relatable, and result-driven.',
         },
         {
             icon: Smartphone,
@@ -35,34 +35,65 @@ const Services = () => {
         },
         {
             icon: Brush,
-            title: 'Graphic Design',
+            title: ' Posters & Graphics',
             description:
-                'Creative visual solutions for all your branding and marketing needs.',
+                'Creative designs that make your message impossible to ignore.',
         },
         {
             icon: Monitor,
-            title: 'Corporate Presentations',
+            title: 'Campaign Planning & Management',
             description:
-                'Compelling presentations that communicate your message effectively and professionally.',
+                'From strategy to success — we run marketing campaigns that truly convert.',
         },
         {
             icon: TrendingUp,
-            title: 'Data Analytics',
+            title: 'Data Entry & Management',
             description:
-                'Transform raw data into impactful visuals for business insights.',
+                'Keep your records organized, accurate, and easily accessible.',
         },
         {
             icon: Layout,
-            title: 'UI Design',
+            title: 'PPT Design & Modification',
             description:
-                'Sophisticated interface designs optimized for usability and design consistency.',
+                'Turn your presentations into visual stories that inspire and impress.',
         },
         {
             icon: Film,
-            title: 'Visual Storytelling',
+            title: 'CGI & 3D Videos',
             description:
-                'Engage your audience through story-driven visual content and animations.',
+                'Add life to your brand with stunning visuals that wow your audience.',
         },
+          {
+            icon: megaphone,
+            title: 'Influencer Marketing',
+            description:
+                'Let popular creators tell your story — authentic, relatable, and result-driven.',
+        },
+          {
+            icon: map-pin,
+            title: 'Google Business Location Setup',
+            description:
+                'Get discovered faster! We help you appear where your customers search the most.',
+        },
+          {
+            icon: message-circle,
+            title: 'WhatsApp Business Setup',
+            description:
+                'Professional setup with catalogs that make communication and sales effortless.',
+        },
+        {
+            icon: target,
+            title: 'Ad Campaigns',
+            description:
+                'Smart ads that reach the right audience — at the right time, every time.',
+        },
+        {
+            icon: star,
+            title: 'Paid Reviews & Brand Mentions',
+            description:
+                'Build credibility fast with authentic voices sharing your story.',
+        },
+        
     ];
 
     const containerVariants = {
