@@ -40,7 +40,7 @@ const Footer = () => {
             className="text-2xl font-display font-bold text-primary"
             whileHover={{ scale: 1.05 }}
           >
-            BUSINESS.VOLUNTEERS
+            BUSINESS VOLUNTEERS
           </motion.div>
 
           {/* Social Media Links with Icons */}
