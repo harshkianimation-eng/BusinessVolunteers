@@ -1,0 +1,34 @@
+# Public marketing pages are crawlable. robots.txt is not access control.
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ChatGPT Search discovery crawler
+User-agent: OAI-SearchBot
+Allow: /
+
+# User-initiated ChatGPT page retrieval; not the crawler that controls Search inclusion
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude web search and user-directed retrieval
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Current behaviour inherited from the prior wildcard policy; owner should confirm this training-crawler choice.
+User-agent: ClaudeBot
+Allow: /
+
+# OpenAI model-training crawler is kept blocked, as in the previous build.
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://aurifymedia.com/sitemap.xml

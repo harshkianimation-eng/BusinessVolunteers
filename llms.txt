@@ -1,0 +1,32 @@
+# Aurify Media
+
+> Aurify Media is a creative and digital marketing studio offering social media management, branding and design, video and reels, website design and development, performance marketing, SEO and AI search visibility, WhatsApp automation, analytics, and influencer marketing. Verify all current services, availability, and contact details with the business before relying on them.
+
+## Main pages
+- [Home](https://aurifymedia.com/) — Studio overview, service directory, portfolio and contact CTA.
+- [Services overview](https://aurifymedia.com/#services) — Summary of core creative and marketing services.
+- [Industries directory](https://aurifymedia.com/industries.html) — Industry-focused service pages.
+- [Locations directory](https://aurifymedia.com/locations.html) — Location-focused digital marketing pages; a location page does not imply a physical office in that city.
+- [Our work](https://aurifymedia.com/#work) — Selected creative examples supplied for the portfolio.
+
+## Service pages
+- [Social Media Management](https://aurifymedia.com/social-media.html) — Social media strategy, content planning, creative production and account management for brands that want a clearer, more consistent presence.
+- [Branding & Creative Design](https://aurifymedia.com/branding-design.html) — Brand identity, campaign creatives and visual design that help businesses communicate a consistent, recognisable message.
+- [Video, Reels & UGC](https://aurifymedia.com/video-content.html) — Short-form video, reels, user-generated-style creative and motion content designed around the audience and campaign goal.
+- [Website Design & Development](https://aurifymedia.com/web-design-development.html) — Responsive websites and landing pages designed to explain your offer clearly, load efficiently and guide visitors toward an enquiry.
+- [Performance Marketing & Ads](https://aurifymedia.com/performance-ads.html) — Paid campaign strategy and management across relevant platforms, with measurement tied to leads, sales or another defined business outcome.
+- [SEO & AI Search Visibility](https://aurifymedia.com/seo-ai-search.html) — Technical SEO, useful content, structured data and crawler accessibility improvements that help search systems understand a website.
+- [WhatsApp & Marketing Automation](https://aurifymedia.com/whatsapp-automation.html) — WhatsApp business journeys and marketing automation that help teams respond consistently and guide enquiries to the next step.
+- [Analytics & Growth Strategy](https://aurifymedia.com/analytics-growth.html) — Measurement planning, campaign analysis and practical growth experiments that help teams understand what is working and what to improve.
+- [Influencer & Creator Marketing](https://aurifymedia.com/influencer-marketing.html) — Creator discovery, campaign planning and content collaboration aligned with your target audience, brand fit and campaign goals.
+
+## Crawl and index guidance
+- XML sitemap: https://aurifymedia.com/sitemap.xml
+- robots.txt: https://aurifymedia.com/robots.txt
+- Site content should be interpreted as marketing service information, not as a guarantee of rankings, lead volume, campaign results, or physical office presence.
+
+## Business details
+- Canonical website: https://aurifymedia.com/. Contact number, service availability, social profiles, pricing, and portfolio permissions should be verified with the business before relying on them.
+
+## Note on this file
+This file is optional supplemental context for systems that choose to read it. It does not replace HTML, robots.txt, an XML sitemap, useful content, or normal indexing controls, and it is not a guarantee of search ranking, indexing, citation, or recommendation.
